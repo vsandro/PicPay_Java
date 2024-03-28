@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "d58ae064-7622-45b4-a802-ad3d64ee4fa7",
+		"name": "PicPay - Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3266939",
+		"_collection_link": "https://speeding-crescent-451664.postman.co/workspace/java~1c47a0bf-89e4-4934-8004-d0f3d110942b/collection/3266939-d58ae064-7622-45b4-a802-ad3d64ee4fa7?action=share&source=collection_link&creator=3266939"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Ana\",\r\n    \"lastName\": \"Santos\",\r\n    \"document\": \"123456789-3\",\r\n    \"email\": \"ana@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"userType\": \"COMMON\",\r\n    \"balance\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"senderId\": 2,\r\n    \"receiverId\": 1,\r\n    \"value\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/transactions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

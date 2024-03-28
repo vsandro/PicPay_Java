@@ -4,11 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PicpayApplication {
+public class PicPayApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(PicpayApplication.class, args);
+		SpringApplication.run(PicPayApplication.class, args);
 		System.out.println("PicPay Application");
 	}
 
